@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.app1">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
+    <application android:label="App1.Android" android:theme="@style/MainTheme">
+      <provider android:name="android.support.v4.content.FileProvider"
+                android:authorities="com.companyname.app1.fileprovider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+        <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/file_paths"></meta-data>
+      </provider>
+
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  
+</manifest>

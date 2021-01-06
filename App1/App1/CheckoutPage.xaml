@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.CheckoutPage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="#FFE2406C">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Label Text="Checkout" 
+                   TextColor="White"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   VerticalOptions="EndAndExpand"
+                   Margin="20,0,0,0"/>
+            <Frame Grid.Row="1"
+                   Margin="20"
+                   CornerRadius="10">
+                <StackLayout>
+                    <StackLayout Spacing="2"
+                                 VerticalOptions="StartAndExpand">
+                        <Label Text="DELIVERY ADDRESS"
+                               TextColor="Black"
+                               FontAttributes="Bold"/>
+                        <Frame CornerRadius="5"
+                               BorderColor="#FFE2406C"
+                               HeightRequest="40"
+                               Padding="10">
+                            <StackLayout>
+                                <Entry HorizontalOptions="FillAndExpand"
+                                       VerticalOptions="FillAndExpand"
+                                       Margin="0,0,0,0"
+                                       FontSize="Small"
+                                       Text="Sample"
+                                       HeightRequest="30"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Spacing="10"
+                                 VerticalOptions="StartAndExpand">
+                        <Label Text="PAYMENT METHOD"
+                               TextColor="Black"
+                               FontAttributes="Bold"/>
+                        <Frame BackgroundColor="LightGray"
+                               HeightRequest="40"
+                               Padding="10"
+                               CornerRadius="5">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="visaLogo"/>
+                                <Entry HorizontalOptions="FillAndExpand"
+                                       Keyboard="Numeric"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame BorderColor="#FFE2406C"
+                               HeightRequest="40"
+                               Padding="10"
+                               CornerRadius="5">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="PayPal"
+                                       HorizontalOptions="Start"/>
+                                <Entry HorizontalOptions="FillAndExpand"
+                                       Keyboard="Numeric"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame BackgroundColor="LightGray"
+                               HeightRequest="40"
+                               Padding="10"
+                               CornerRadius="5">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="MasterCard"/>
+                                <Entry HorizontalOptions="FillAndExpand"
+                                       Keyboard="Numeric"/>
+                            </StackLayout>
+                        </Frame>
+                        <Label/>
+                        <Button Text="PAyment"
+                                BackgroundColor="#FFE2406C"
+                                TextColor="White"
+                                CornerRadius="8"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

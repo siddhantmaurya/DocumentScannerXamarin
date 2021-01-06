@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.DocumentScanner">
+    <ContentPage.Content>
+        <Grid>
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Document Scanner"
+                           TextColor="Black"
+                           Margin="0,5,0,0"
+                           HorizontalOptions="CenterAndExpand" 
+                           VerticalTextAlignment="Center"/>
+                    
+
+                    <Image x:Name="CovertedImage" 
+                           VerticalOptions="CenterAndExpand"
+                           HeightRequest="400"
+                           Aspect="AspectFit"/>
+                    
+                    <Button BackgroundColor="Gray"
+                            Text="Start Scanner"
+                            TextColor="White"
+                            CornerRadius="10"
+                            Padding="10,0"
+                            FontSize="Medium"
+                            HeightRequest="40"
+                            Margin="0,0,0,20"
+                            VerticalOptions="End"
+                            HorizontalOptions="Center"
+                            Clicked="StartScan"/>
+                </StackLayout>
+            </ScrollView>
+            <Grid BackgroundColor="Black"
+                  x:Name="LoaderGrid"
+                  IsVisible="false"
+                  Opacity="0.8"
+                  VerticalOptions="FillAndExpand"
+                  HorizontalOptions="FillAndExpand">
+                <ActivityIndicator x:Name="Loader"
+                                   Color="Yellow"
+                               IsVisible="false"
+                               VerticalOptions="Center"/>
+                <Button Text="Cancel"
+                        Clicked="CancelScan"
+                        TextColor="White"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="End"
+                        VerticalOptions="End"/>
+            </Grid>
+            
+        </Grid>
+        
+        
+    </ContentPage.Content>
+</ContentPage>
