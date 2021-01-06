@@ -73,7 +73,7 @@ namespace App1
 
         private async void StartScan(object sender, EventArgs e)
         {
-            var scale = 0.6;
+            var scale = 0.4;
             var stream = await TakePhoto();
 
             Loader.IsRunning = true;
