@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentScanner.iOS", "App1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentScanner", "App1\App1\DocumentScanner.csproj", "{E7A20334-4CEB-4410-91FE-5E0DE350CF72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Imaging.Library", "..\..\Imaging-Library-master\Imaging-Library-master\sources\Imaging.Library\Imaging.Library.csproj", "{E0AFFF7A-47B5-4BAC-8FC4-954302C08624}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Imaging.Library", "App1\Imaging.Library\Imaging.Library.csproj", "{E0AFFF7A-47B5-4BAC-8FC4-954302C08624}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
